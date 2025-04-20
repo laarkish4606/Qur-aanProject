@@ -1,0 +1,44 @@
+#bisin {
+    text-align: center;
+    margin: 10px 0;
+}
+
+#bisin a {
+    font-size: 24px;
+    color: #000;
+    text-decoration: none;
+    direction: rtl;
+    lang: ar;
+}
+
+#ayah {
+    text-align: center;
+    margin: 20px 0;
+    padding-bottom: 40px;
+   
+}
+
+#ayah a {
+    font-size: 24px;
+    color: #000;
+    text-decoration: none;
+    display: inline-block;
+    direction: rtl;
+    lang: ar;
+    position: relative;
+}
+
+#ayah img#ayah-sign {
+    margin-left: 10px;
+    vertical-align: middle;
+    width: 40px;
+}
+
+#ayah span#ayah-number {
+    font-size: 18px;
+    margin: 0 auto;
+    /* vertical-align: middle; */
+   position: relative;
+   left: 40px;
+   
+}

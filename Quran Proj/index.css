@@ -1,0 +1,171 @@
+@import url('https://fonts.googleapis.com/css2?family=Amiri+Quran&family=Inter:wght@100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Permanent+Marker&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+/* .amiri-quran-regular {
+    font-family: "Amiri Quran", serif;
+    font-weight: 400;
+    font-style: normal;
+  } */
+
+  @font-face {
+    font-family: 'quran-karim';
+    src: url();
+  }
+  *{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+   
+  }
+  body{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  
+    
+  }
+.quran-img{
+ margin-top: 20px; 
+ 
+}
+.nobel{
+    margin: 25px;
+    font-family: sans-serif;
+    font-weight:600;
+    font-size: 40px;
+    color: #00acc1;
+}
+
+  .search{
+    position: relative;
+    width:100%;
+    margin-left: 10rem;
+    display: flex;
+    flex-direction: row;
+  }
+  #search{
+    width: 40%;
+    padding:10px 15px;
+    margin-top:30px ;
+    border: 2px solid #ced4da;
+    background-color: #f8f9fb;
+    border-radius: 5px;
+    font-size: 20px;
+  }
+  #search:focus{
+    color: #495057;
+    background-color: #f8f9fa;
+    border-color: #42eaff;
+    box-shadow:0 2px 10px rgba(0,0,0,0.2)  ;
+    outline: none;
+  }
+ #loader{
+    width: 100px;
+    height: 100px;
+    margin-top: 10px;
+    display:none;
+    
+ }
+ .container{
+  position: relative;
+  max-width:1370px;
+  margin-top: 50px;
+  display: grid;
+  grid-template-columns: repeat(3,1fr);
+  grid-gap: 30px;
+  margin-bottom: 50px;
+  padding: 16px; 
+ 
+ }
+ .surah-info{
+  position: relative;
+  left: 0;
+  top: 0;
+  display: flex;
+  flex-direction: row;
+  height: 100px;
+  border-radius: 5px;
+  border: 1px solid #d1d1d1;
+ }
+ .surah-info:hover{
+  border: 1px solid #00acc1;
+  box-shadow:0 2px 10px rgba(0,0,0,0.2)  ;
+ }
+ .surah-name{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+ }
+ .surah-name a{
+  text-decoration: none;
+  margin: 30px;
+  font-size: 19px;
+  color: #00acc1;
+ }
+ #surah-en{
+ font-size: 'robbot';
+ font-weight: bold;
+ font-size: 20px;
+ }
+
+ #surah-ar{
+  font-family: "Amiri Quran", serif;
+  font-weight: 400px;
+  font-style: normal;
+  font-size: 25px;
+  font-weight: bold;
+ 
+
+ }
+ #aya-number{
+  position: absolute;
+  width: 50px;
+  background-color: #00acc1;
+  left: 0;
+  border-bottom-right-radius: 5px;
+  font-family: sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+
+ }
+ @media(max-width:480px){
+  .container{
+    grid-template-columns: 1fr 1fr;
+  }
+ }
+
+ /* for smartphones */
+ @media screen and(max-width:600px){
+  .container{
+    grid-template-columns:1fr;
+  }
+  .search{
+    width: 100%;
+  }
+ }
+ /* for tablets  */
+ @media screen and (min-width:600px){
+  .container{
+    grid-template-columns:1fr 1fr;
+  }
+ }
+ /* for laptops */
+ @media screen and (min-width:900px){
+  .container{
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+  .search{
+    width: 100%;
+    /* margin-left: 5rem; */
+  }
+ }
+ /* large acreen */
+ @media screen and (min-width: 1400px){
+  .container{
+    width: 1570px;
+    grid-template-columns:repeat(3,1fr);
+  }
+ }
+ 
